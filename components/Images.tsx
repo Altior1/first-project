@@ -22,6 +22,6 @@ export default function MyImage() {
 
 const styles = StyleSheet.create({
     container: {flex: 1, alignItems: 'center', justifyContent: 'center'},
-    image: {flex: 4, width: '100%', backgroundColor: '#0553'},
+    image: {flex: 4, width: 500, height: '100%', backgroundColor: '#0553'},
     text: {fontSize: 20, marginTop: 70, color: '#5a36d2ff', flex: 1},
 });
