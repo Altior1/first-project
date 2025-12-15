@@ -1,5 +1,10 @@
-import MyImage from "@/components/Images";
+import CartePostale from "@/components/CartePostale";
+import { View } from "react-native";
 
 export default function ImageScreen() {
-    return <MyImage />;
+    return(
+    <View style={{flex: 1}}>
+        <CartePostale />
+     </View>)
+    ;
 }
