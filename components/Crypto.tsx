@@ -1,6 +1,6 @@
+import { FlashList } from '@shopify/flash-list';
 import React, { memo } from 'react';
-import { FlatList, StyleSheet, Text, View } from 'react-native';
-
+import { StyleSheet, Text, View } from 'react-native';
 
 const generateData = (count: number) => {
     
@@ -32,7 +32,7 @@ const CryptoItem = memo(({ symbol, price, change } : { symbol: string; price: st
 export default function Crypto() {
     return (
         <View style={styles.container}>
-            <FlatList
+            <FlashList
                 data={COINS}
                 keyExtractor={(item) => item.id}
                 renderItem={({ item }) => (
